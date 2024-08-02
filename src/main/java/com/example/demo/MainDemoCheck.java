@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.easyPracticeTest.TwoSum;
+import com.example.demo.easyPracticeTest.ValidParentheses;
 
 import java.util.Arrays;
 
@@ -14,5 +15,11 @@ public class MainDemoCheck {
         System.out.println(Arrays.toString(result));
         int[] resultA = twoSum.twoSumA(num,target);
         System.out.println(Arrays.toString(resultA));
+
+        //problem 2:
+        ValidParentheses validParentheses = new ValidParentheses();
+        String str = ")({})]";
+        Boolean resultB = validParentheses.isValid(str);
+        System.out.println("isValid : "+ resultB);
     }
 }
