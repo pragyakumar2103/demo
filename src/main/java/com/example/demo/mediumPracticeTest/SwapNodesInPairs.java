@@ -40,6 +40,6 @@ public class SwapNodesInPairs {
 * Adjust pointers to maintain the list structure.Return the new head of the swapped list.
 *
 * Complexity
-* Time Complexity: ( O(n) ) (linear traversal of the list)
-* Space Complexity: ( O(1) ) (constant extra space)
+* Time Complexity: ( O(n) )     0ms     (linear traversal of the list)
+* Space Complexity: ( O(1) )    40.95MB (constant extra space)
 * */
