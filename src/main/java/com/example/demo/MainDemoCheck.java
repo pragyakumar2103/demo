@@ -1,10 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.difficultPracticeTest.MergeKSortedList;
-import com.example.demo.easyPracticeTest.Factorial;
-import com.example.demo.easyPracticeTest.MergeTwoSortedList;
-import com.example.demo.easyPracticeTest.TwoSum;
-import com.example.demo.easyPracticeTest.ValidParentheses;
+import com.example.demo.easyPracticeTest.*;
 import com.example.demo.helpingClasses.ListNode;
 import com.example.demo.mediumPracticeTest.GenerateParentheses;
 import com.example.demo.mediumPracticeTest.SwapNodesInPairs;
@@ -14,7 +11,7 @@ import java.util.List;
 
 public class MainDemoCheck {
     public static void main(String[] args) {
-        String input = "SwapNodesInPairs";
+        String input = "RemoveDuplicates";
         switch (input) {
             case "TwoSum":
                 TwoSum twoSum = new TwoSum();
@@ -85,6 +82,11 @@ public class MainDemoCheck {
                     System.out.print(i + " ");
                 System.out.println();
                 break;
+
+            case "RemoveDuplicates":
+                RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+                int[] nums = {0,2,5,5,8,9};
+                System.out.println("unique values : " + removeDuplicates.removeDuplicates(nums));
         }
     }
 }
