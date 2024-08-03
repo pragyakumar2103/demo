@@ -1,8 +1,7 @@
 package com.example.demo.difficultPracticeTest;
 
 import com.example.demo.easyPracticeTest.MergeTwoSortedList;
-
-import java.lang.classfile.components.ClassPrinter;
+import com.example.demo.helpingClasses.ListNode;
 
 public class MergeKSortedList {
     //You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
@@ -19,7 +18,7 @@ public class MergeKSortedList {
      *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
-    public MergeTwoSortedList.ListNode mergeKLists(ClassPrinter.ListNode[] lists) {
+    public ListNode mergeKLists(ListNode[] lists) {
 
         return null;
     }

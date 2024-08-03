@@ -1,5 +1,7 @@
 package com.example.demo.easyPracticeTest;
 
+import com.example.demo.helpingClasses.ListNode;
+
 public class MergeTwoSortedList {
     //You are given the heads of two sorted linked lists list1 and list2.
     //
@@ -28,13 +30,6 @@ public class MergeTwoSortedList {
             current.next = list2;
 
         return list.next;
-    }
-    public class ListNode{
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }
 /*
