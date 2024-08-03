@@ -7,13 +7,14 @@ import com.example.demo.easyPracticeTest.TwoSum;
 import com.example.demo.easyPracticeTest.ValidParentheses;
 import com.example.demo.helpingClasses.ListNode;
 import com.example.demo.mediumPracticeTest.GenerateParentheses;
+import com.example.demo.mediumPracticeTest.SwapNodesInPairs;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class MainDemoCheck {
     public static void main(String[] args) {
-        String input = "Factorial";
+        String input = "SwapNodesInPairs";
         switch (input) {
             case "TwoSum":
                 TwoSum twoSum = new TwoSum();
@@ -72,6 +73,17 @@ public class MainDemoCheck {
                 double number = 50;
                 double resultE = factorial.factorial(number);
                 System.out.println("Factorial of " + number + " is: " + resultE);
+                break;
+            case "SwapNodesInPairs":
+                ListNode list21 = new ListNode(1);
+                list21.next = new ListNode(3);
+                list21.next.next = new ListNode(4);
+                SwapNodesInPairs swapNodesInPairs = new SwapNodesInPairs();
+                ListNode swappedPairs = swapNodesInPairs.swapPairs(list21);
+                System.out.print("Swapped List : ");
+                for (int i : swappedPairs)
+                    System.out.print(i + " ");
+                System.out.println();
                 break;
         }
     }
