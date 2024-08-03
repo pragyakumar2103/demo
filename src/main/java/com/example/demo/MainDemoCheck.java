@@ -5,11 +5,14 @@ import com.example.demo.easyPracticeTest.MergeTwoSortedList;
 import com.example.demo.easyPracticeTest.TwoSum;
 import com.example.demo.easyPracticeTest.ValidParentheses;
 import com.example.demo.helpingClasses.ListNode;
+import com.example.demo.mediumPracticeTest.GenerateParentheses;
+
 import java.util.Arrays;
+import java.util.List;
 
 public class MainDemoCheck {
     public static void main(String[] args) {
-        String input = "TwoSum";
+        String input = "GenerateParentheses";
         switch (input) {
             case "TwoSum":
                 TwoSum twoSum = new TwoSum();
@@ -47,7 +50,25 @@ public class MainDemoCheck {
 
                 MergeKSortedList mergeKSortedList = new MergeKSortedList();
                 //ListNode mergedList1 = mergeKSortedList.mergeKLists();
+                break;
 
+            case "GenerateParentheses":
+                GenerateParentheses generateParentheses = new GenerateParentheses();
+                List<String> resultC = generateParentheses.generateParenthesis(3);
+                System.out.println("result : ");
+                for (String str1 : resultC){
+                    System.out.println(str1);
+                }
+                List<String> resultD = generateParentheses.generateParenthesisA(2);
+                System.out.println("result : ");
+                for (String str1 : resultD){
+                    System.out.println(str1);
+                }
+                break;
+
+            case "Factorial":
+
+                break;
         }
     }
 }
