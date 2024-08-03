@@ -30,4 +30,23 @@ public class GenerateParentheses {
         return result;
     }
 }
+/*
+* Intuition
+* The problem of generating all combinations of well-formed parentheses can be tackled using a backtracking approach.
+* This involves constructing the string step by step while ensuring that the parentheses are balanced at every stage.
+* The recursive backtracking approach helps explore all possible valid combinations by adding either an opening or
+* closing parenthesis, given that the current state remains valid.
+*
+* Approach
+* Base Case:When the length of the current string is equal to 2 * n,
+* the string is a valid combination, so add it to the result list.
+* Recursive Case:If the number of opening parentheses (open) is less than n,
+* add an opening parenthesis and recursively call the helper function.
+* If the number of closing parentheses (close) is less than the number of opening parentheses (open),
+* add a closing parenthesis and recursively call the helper function.
+*
+* Complexity
+Time complexity:O(4^n /\ sqrt{n})    1ms
+Space complexity:O(n)   43.47MB n is depth of recursion tree, recursion stack can go up to 2*n calls deep
+* */
 

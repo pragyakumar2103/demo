@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.difficultPracticeTest.MergeKSortedList;
+import com.example.demo.easyPracticeTest.Factorial;
 import com.example.demo.easyPracticeTest.MergeTwoSortedList;
 import com.example.demo.easyPracticeTest.TwoSum;
 import com.example.demo.easyPracticeTest.ValidParentheses;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class MainDemoCheck {
     public static void main(String[] args) {
-        String input = "GenerateParentheses";
+        String input = "Factorial";
         switch (input) {
             case "TwoSum":
                 TwoSum twoSum = new TwoSum();
@@ -67,7 +68,10 @@ public class MainDemoCheck {
                 break;
 
             case "Factorial":
-
+                Factorial factorial = new Factorial();
+                double number = 50;
+                double resultE = factorial.factorial(number);
+                System.out.println("Factorial of " + number + " is: " + resultE);
                 break;
         }
     }
